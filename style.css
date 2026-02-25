@@ -1,0 +1,90 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
+
+@font-face {
+  font-family: "Ethnocentric";
+  src: url("/fonts/Ethnocentric-Regular.otf") format("opentype");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+* {
+  box-sizing: border-box;
+  text-decoration: none;
+  list-style: none;
+  font-family: "Montserrat", sans-serif;
+  font-optical-sizing: auto;
+  font-style: normal;
+  font-display: swap;
+}
+
+html,
+body {
+  scroll-behavior: smooth;
+}
+.ethno {
+  font-family: "Ethnocentric", sans-serif;
+}
+.pr_wrapper > div {
+  background: url("/photos/parallax.webp") center/cover no-repeat;
+  background-attachment: fixed;
+}
+.pr_get_btm_anm {
+  width: 100%;
+  height: 2px;
+  background-color: #50b946;
+  display: inline-block;
+  transition: all 0.3s ease-in-out;
+}
+.productSwiper a:hover .pr_get_btm_anm {
+  width: 0;
+}
+.ab_icon_wrapper {
+  box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+}
+.faq_wrap button.active {
+    transform: rotate(180deg);
+}
+/* container */
+.container {
+  width: 100%;
+  margin-inline: auto;
+  padding-inline: clamp(16px, 4vw, 40px);
+  max-width: 1320px;
+}
+
+/* Small devices (phones ≥576px) */
+@media (min-width: 576px) {
+  .container {
+    max-width: 540px;
+  }
+}
+
+/* Medium devices (tablets ≥768px) */
+@media (min-width: 768px) {
+  .container {
+    max-width: 720px;
+  }
+}
+
+/* Large devices (desktops ≥992px) */
+@media (min-width: 992px) {
+  .container {
+    max-width: 960px;
+  }
+}
+
+/* Extra large devices (≥1200px) */
+@media (min-width: 1200px) {
+  .container {
+    max-width: 1140px;
+  }
+}
+
+/* 2XL screens (≥1400px) */
+@media (min-width: 1500px) {
+  .container {
+    max-width: 1366px;
+    padding-inline: 0px;
+  }
+}
