@@ -45,6 +45,9 @@ body {
 .faq_wrap button.active {
     transform: rotate(180deg);
 }
+#mob_menu.active {
+  left: 0;
+}
 /* container */
 .container {
   width: 100%;
